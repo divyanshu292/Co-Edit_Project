@@ -27,6 +27,7 @@ export default function TextEditor() {
 useEffect(() => {
        //const s = io("http://localhost:3001")
        const s = io("https://google-d-c-s-s.vercel.app")
+       const s = io("https://google-d-c-s-mzyp8smv8-divyanshu-aryans-projects.vercel.app")
        setSocket(s)
        return () => {
         s.disconnect()
