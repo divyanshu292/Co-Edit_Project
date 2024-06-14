@@ -67,7 +67,7 @@ mongoose.connect("mongodb+srv://dbuser1:pass4google@googledc-db.zylbz6v.mongodb.
 const io = require("socket.io")(3001, {
     cors: {
         //origin: "http://localhost:3000",
-        origin: "google-d-c-c-s.vercel.app",
+        origin: "https://google-d-c-c-s.onrender.com",
         methods: ["GET", "POST"],
     },
 });
