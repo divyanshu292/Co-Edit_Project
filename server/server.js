@@ -44,19 +44,19 @@
 const mongoose = require("mongoose");
 const Document = require("./Document");
 
-//mongoose.connect("mongodb://localhost/google-doc-clone", {
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
-    // useFindAndModify: false,
-    // useCreateIndex: true,
-//});
-
-mongoose.connect("mongodb+srv://Cluster11336:google-d-c@cluster11336.vee1tfb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster11336", {
+mongoose.connect("mongodb://localhost/google-doc-clone", {
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
     // useFindAndModify: false,
     // useCreateIndex: true,
 });
+
+//mongoose.connect("mongodb+srv://Cluster11336:google-d-c@cluster11336.vee1tfb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster11336", {
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
+    // useFindAndModify: false,
+    // useCreateIndex: true,
+//});
 
 const io = require("socket.io")(3001, {
     cors: {
