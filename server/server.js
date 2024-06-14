@@ -61,7 +61,7 @@ mongoose.connect("mongodb+srv://Cluster11336:google-d-c@cluster11336.vee1tfb.mon
 const io = require("socket.io")(3001, {
     cors: {
         //origin: "http://localhost:3000",
-        origin: "https://google-d-c-c-s.vercel.app/",
+        origin: "https://google-d-c-c-s.vercel.app",
         methods: ["GET", "POST"],
     },
 });
