@@ -51,7 +51,7 @@ const Document = require("./Document");
     // useCreateIndex: true,
 //});
 
-mongoose.connect("mongodb+srv://Cluster11336:google-d-c@cluster11336.vee1tfb.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster11336", {
+mongoose.connect("mongodb+srv://Cluster11336:google-d-c@cluster11336.vee1tfb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster11336", {
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
     // useFindAndModify: false,
