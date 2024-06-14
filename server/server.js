@@ -69,6 +69,7 @@ const io = require("socket.io")(3001, {
 const defaultValue = "";
 
 io.on("connection", (socket) => {
+    console.log("connected")
     socket.on("get-document", async (documentId) => {
         if (!documentId) {
             socket.emit("error", "Invalid document ID");
